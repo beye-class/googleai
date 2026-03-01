@@ -36,7 +36,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* 浮動動畫 */
         @keyframes float {
             0% { transform: translateY(0px) rotate(0deg); }
             50% { transform: translateY(-15px) rotate(2deg); }
@@ -46,7 +45,6 @@
             animation: float 5s ease-in-out infinite;
         }
 
-        /* 內容顯現動畫 */
         .reveal {
             opacity: 0;
             transform: translateY(30px);
@@ -66,7 +64,7 @@
 
         .gem-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 12px 40px rgba(217, 119, 6, 0.1);
+            box-shadow: 0 12px 40px rgba(217, 119, 6, 0.15);
         }
 
         nav a.active {
@@ -109,179 +107,126 @@
                     Gemini 老師的<br><span class="gradient-text">魔法備課室</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-stone-500 mb-10 leading-relaxed">
-                    把瑣事留給 AI，把溫度帶回課堂。<br>為國小老師打造的 60 分鐘超效備課。
+                    把瑣事留給 AI，把溫度帶回課堂。<br>六大實戰工具，讓智慧備課成為您的日常。
                 </p>
                 <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="#gems" class="px-8 py-4 bg-stone-800 text-white rounded-2xl font-bold hover:bg-stone-700 transition-all hover:shadow-xl">開始體驗</a>
+                    <a href="#gems" class="px-8 py-4 bg-stone-800 text-white rounded-2xl font-bold hover:bg-stone-700 transition-all hover:shadow-xl">開啟體驗</a>
                     <a href="#formula" class="px-8 py-4 bg-white border-2 border-orange-100 text-orange-700 rounded-2xl font-bold hover:bg-orange-50 transition-all">教學公式</a>
                 </div>
             </div>
-            
             <div class="hidden md:flex justify-center relative">
-                <!-- Hero Illustration SVG -->
                 <svg width="400" height="400" viewBox="0 0 400 400" fill="none" class="animate-float">
-                    <!-- Laptop Body -->
                     <rect x="80" y="240" width="240" height="10" rx="5" fill="#5D4037"/>
                     <rect x="100" y="100" width="200" height="140" rx="10" fill="#EED6C4" stroke="#5D4037" stroke-width="4"/>
                     <rect x="115" y="115" width="170" height="110" rx="4" fill="white"/>
-                    <!-- Sparkles -->
-                    <path d="M300 80L310 110L340 120L310 130L300 160L290 130L260 120L290 110L300 80Z" fill="#FBBC05" class="animate-pulse"/>
-                    <!-- Book and Tool Icon -->
-                    <rect x="310" y="200" width="40" height="50" rx="4" fill="#D97706" transform="rotate(15 310 200)"/>
-                    <path d="M315 215H345M315 225H345" stroke="white" stroke-width="2" transform="rotate(15 310 200)"/>
-                    <rect x="50" y="220" width="40" height="50" rx="4" fill="#4285F4" transform="rotate(-10 50 220)"/>
+                    <path d="M300 80L310 110L340 120L310 130L300 160L290 130L260 120L290 110L300 80Z" fill="#FBBC05" class="opacity-80"/>
+                    <rect x="310" y="200" width="45" height="60" rx="6" fill="#D97706" transform="rotate(15 310 200)"/>
+                    <path d="M315 210H345M315 220H345" stroke="white" stroke-width="2" transform="rotate(15 310 200)"/>
                 </svg>
-            </div>
-        </div>
-    </section>
-
-    <!-- 心法 Section -->
-    <section class="py-24 px-6 bg-white overflow-hidden">
-        <div class="max-w-5xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
-                <div class="reveal">
-                    <h2 class="text-3xl font-bold mb-8 border-l-8 border-orange-500 pl-4 text-stone-800">備課心法：你的數位實習生</h2>
-                    <p class="text-lg text-stone-600 mb-8 leading-relaxed">
-                        Gemini 不是冷冰冰的搜尋引擎，它是具備邏輯、能理解情境的夥伴。
-                    </p>
-                    <div class="grid grid-cols-1 gap-4">
-                        <div class="flex items-center p-5 bg-orange-50 rounded-2xl border border-orange-100 transition hover:bg-orange-100">
-                            <i class="fa-solid fa-comments text-orange-500 text-2xl mr-4"></i>
-                            <span class="text-stone-700"><strong>親師溝通：</strong> 修飾出最具溫度的文字</span>
-                        </div>
-                        <div class="flex items-center p-5 bg-blue-50 rounded-2xl border border-blue-100 transition hover:bg-blue-100">
-                            <i class="fa-solid fa-pen-to-square text-blue-500 text-2xl mr-4"></i>
-                            <span class="text-stone-700"><strong>成績評語：</strong> 針對學生特質產出不重複靈感</span>
-                        </div>
-                        <div class="flex items-center p-5 bg-green-50 rounded-2xl border border-green-100 transition hover:bg-green-100">
-                            <i class="fa-solid fa-file-lines text-green-500 text-2xl mr-4"></i>
-                            <span class="text-stone-700"><strong>輔導紀錄：</strong> 結構化整理瑣碎的學生觀察</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="reveal delay-200 text-center">
-                    <svg viewBox="0 0 200 200" class="w-64 h-64 mx-auto animate-float">
-                        <circle cx="100" cy="100" r="80" fill="#FFFBF5" stroke="#EED6C4" stroke-width="2"/>
-                        <circle cx="100" cy="100" r="40" fill="#D97706" fill-opacity="0.1"/>
-                        <path d="M85 100H115M100 85V115" stroke="#D97706" stroke-width="6" stroke-linecap="round"/>
-                        <path d="M140 60L150 70M150 60L140 70" stroke="#FBBC05" stroke-width="3" stroke-linecap="round"/>
-                    </svg>
-                    <p class="text-2xl font-bold mt-8 italic text-stone-800">「科技處理庶務，我們傳遞溫度」</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- RTCF Formula Section -->
-    <section id="formula" class="py-24 px-6 bg-stone-50">
-        <div class="max-w-5xl mx-auto text-center reveal">
-            <h2 class="text-4xl font-bold mb-4 text-stone-800">核心：萬能指令 (Prompt) 公式</h2>
-            <p class="text-stone-500 mb-16">掌握 RTCF，精準驅動 AI 為你服務</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <!-- R -->
-                <div class="p-8 glass rounded-3xl border-b-8 border-blue-500 transition-all hover:-translate-y-2 text-center">
-                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto mb-6">R</div>
-                    <div class="font-bold text-xl mb-2">角色 Role</div>
-                    <p class="text-sm text-stone-500 italic">"你是一位溫暖導師"</p>
-                </div>
-                <!-- T -->
-                <div class="p-8 glass rounded-3xl border-b-8 border-red-500 transition-all hover:-translate-y-2 text-center">
-                    <div class="w-16 h-16 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto mb-6">T</div>
-                    <div class="font-bold text-xl mb-2">任務 Task</div>
-                    <p class="text-sm text-stone-500 italic">"撰寫 LINE 通知"</p>
-                </div>
-                <!-- C -->
-                <div class="p-8 glass rounded-3xl border-b-8 border-yellow-500 transition-all hover:-translate-y-2 text-center">
-                    <div class="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto mb-6">C</div>
-                    <div class="font-bold text-xl mb-2">背景 Context</div>
-                    <p class="text-sm text-stone-500 italic">"下週教學、雨具"</p>
-                </div>
-                <!-- F -->
-                <div class="p-8 glass rounded-3xl border-b-8 border-green-500 transition-all hover:-translate-y-2 text-center">
-                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto mb-6">F</div>
-                    <div class="font-bold text-xl mb-2">格式 Format</div>
-                    <p class="text-sm text-stone-500 italic">"150字、Emoji"</p>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- GEM Showcase Section -->
     <section id="gems" class="py-24 px-6 bg-white">
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-7xl mx-auto">
             <div class="text-center mb-20 reveal">
-                <h2 class="text-4xl font-bold mb-4 text-stone-800">魔法機器人：四大實戰應用</h2>
-                <p class="text-stone-500">點擊按鈕，現場示範這四種強大的備課工具</p>
+                <h2 class="text-4xl font-bold mb-4 text-stone-800">魔法機器人：六大實戰應用</h2>
+                <p class="text-stone-500">點擊按鈕，現場示範這些強大的備課與行政工具</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- GEM 1: 閱讀測驗 -->
-                <div class="gem-card glass p-10 rounded-3xl border border-orange-100 flex flex-col reveal relative overflow-hidden transition-all">
-                    <div class="absolute -right-6 -top-6 w-32 h-32 bg-blue-50 rounded-full opacity-50"></div>
-                    <div class="flex justify-between items-start mb-8 relative">
-                        <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl shadow-sm">
+                <div class="gem-card glass p-8 rounded-3xl border border-orange-100 flex flex-col reveal relative overflow-hidden transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-graduation-cap"></i>
                         </div>
-                        <span class="px-4 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-widest">出題高手</span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-stone-800">閱讀測驗機器人</h3>
-                    <p class="text-stone-600 flex-grow mb-8 text-lg">
-                        自動分析文本並產出提取訊息、推論與思考題。包含完整表格與解析，大幅節省出卷時間。
+                    <h3 class="text-xl font-bold mb-3 text-stone-800">閱讀測驗機器人</h3>
+                    <p class="text-stone-600 flex-grow mb-6 text-sm">
+                        自動分析文本並產出提取訊息、推論與思考題。包含完整表格與解析，大幅節省出題時間。
                     </p>
-                    <a href="https://gemini.google.com/gem/1JWrG2W4O8Msjv3fWKIeDNv-lzvMvnJhP?usp=sharing" target="_blank" class="w-full py-4 bg-stone-800 text-white text-center rounded-2xl font-bold hover:bg-blue-600 transition-all shadow-lg active:scale-95">
-                        <i class="fa-solid fa-play mr-2"></i> 立即示範
+                    <a href="https://gemini.google.com/gem/1JWrG2W4O8Msjv3fWKIeDNv-lzvMvnJhP?usp=sharing" target="_blank" class="w-full py-3 bg-stone-800 text-white text-center rounded-xl font-bold hover:bg-blue-600 transition-all shadow-md">
+                        立即示範
                     </a>
                 </div>
 
                 <!-- GEM 2: 輔導B卡 -->
-                <div class="gem-card glass p-10 rounded-3xl border border-orange-100 flex flex-col reveal delay-100 relative overflow-hidden transition-all">
-                    <div class="absolute -right-6 -top-6 w-32 h-32 bg-orange-50 rounded-full opacity-50"></div>
-                    <div class="flex justify-between items-start mb-8">
-                        <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center text-3xl shadow-sm">
+                <div class="gem-card glass p-8 rounded-3xl border border-orange-100 flex flex-col reveal delay-100 relative overflow-hidden transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-clipboard-check"></i>
                         </div>
-                        <span class="px-4 py-1 bg-orange-50 text-orange-700 rounded-full text-xs font-bold uppercase tracking-widest">紀錄助手</span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-stone-800">輔導 B 卡紀錄小幫手</h3>
-                    <p class="text-stone-600 flex-grow mb-8 text-lg text-stone-600">
-                        將零碎的課間觀察轉化為專業、客觀的輔導紀錄。結構化呈現行為、分析與建議。
+                    <h3 class="text-xl font-bold mb-3 text-stone-800">輔導 B 卡小幫手</h3>
+                    <p class="text-stone-600 flex-grow mb-6 text-sm">
+                        將碎片的課間觀察轉化為專業、客觀的輔導紀錄。結構化呈現行為、分析與建議。
                     </p>
-                    <a href="https://gemini.google.com/gem/10OjUfUHbg5P-VVK3WXSyrlbR2880OLMu?usp=sharing" target="_blank" class="w-full py-4 bg-stone-800 text-white text-center rounded-2xl font-bold hover:bg-orange-600 transition-all shadow-lg active:scale-95">
-                        <i class="fa-solid fa-play mr-2"></i> 立即示範
+                    <a href="https://gemini.google.com/gem/10OjUfUHbg5P-VVK3WXSyrlbR2880OLMu?usp=sharing" target="_blank" class="w-full py-3 bg-stone-800 text-white text-center rounded-xl font-bold hover:bg-orange-600 transition-all shadow-md">
+                        立即示範
                     </a>
                 </div>
 
                 <!-- GEM 3: LINE 宣導 -->
-                <div class="gem-card glass p-10 rounded-3xl border border-orange-100 flex flex-col reveal delay-200 relative overflow-hidden transition-all">
-                    <div class="absolute -right-6 -top-6 w-32 h-32 bg-purple-50 rounded-full opacity-50"></div>
-                    <div class="flex justify-between items-start mb-8">
-                        <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center text-3xl shadow-sm">
+                <div class="gem-card glass p-8 rounded-3xl border border-orange-100 flex flex-col reveal delay-200 relative overflow-hidden transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-bullhorn"></i>
                         </div>
-                        <span class="px-4 py-1 bg-purple-50 text-purple-700 rounded-full text-xs font-bold uppercase tracking-widest">通訊專家</span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-stone-800">LINE 親師群組宣傳大師</h3>
-                    <p class="text-stone-600 flex-grow mb-8 text-lg">
-                        將死板公文轉化為易讀訊息，並規劃適合截圖的手機資訊圖卡。提供溫馨或醒目多種風格。
+                    <h3 class="text-xl font-bold mb-3 text-stone-800">LINE 親師群組宣傳</h3>
+                    <p class="text-stone-600 flex-grow mb-6 text-sm">
+                        將死板公文轉化為易讀訊息與手機視覺圖卡佈局。提供溫馨、專業多種風格選擇。
                     </p>
-                    <a href="https://gemini.google.com/gem/1b9c97613d9e" target="_blank" class="w-full py-4 bg-stone-800 text-white text-center rounded-2xl font-bold hover:bg-purple-600 transition-all shadow-lg active:scale-95">
-                        <i class="fa-solid fa-play mr-2"></i> 立即示範
+                    <a href="https://gemini.google.com/gem/1b9c97613d9e" target="_blank" class="w-full py-3 bg-stone-800 text-white text-center rounded-xl font-bold hover:bg-purple-600 transition-all shadow-lg">
+                        立即示範
                     </a>
                 </div>
 
-                <!-- GEM 4: 指令優化 -->
-                <div class="gem-card glass p-10 rounded-3xl border border-orange-100 flex flex-col reveal delay-300 relative overflow-hidden transition-all">
-                    <div class="absolute -right-6 -top-6 w-32 h-32 bg-green-50 rounded-full opacity-50"></div>
-                    <div class="flex justify-between items-start mb-8">
-                        <div class="w-16 h-16 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center text-3xl shadow-sm">
+                <!-- GEM 4: 擊敗恐龍家長 -->
+                <div class="gem-card glass p-8 rounded-3xl border border-orange-100 flex flex-col reveal delay-300 relative overflow-hidden transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-14 h-14 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full text-xs font-bold">高 EQ 救星</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-stone-800">擊敗恐龍家長大作戰</h3>
+                    <p class="text-stone-600 flex-grow mb-6 text-sm">
+                        將直白情緒轉化為專業且具備教育高度的親師溝通文字。守護您的專業形象。
+                    </p>
+                    <a href="https://gemini.google.com/gem/1id6VKdt1xYRy49_Auy53CMidvQ-85xx8?usp=sharing" target="_blank" class="w-full py-3 bg-stone-800 text-white text-center rounded-xl font-bold hover:bg-red-600 transition-all shadow-lg">
+                        立即示範
+                    </a>
+                </div>
+
+                <!-- GEM 5: 期末評語 (NEW) -->
+                <div class="gem-card glass p-8 rounded-3xl border border-orange-100 flex flex-col reveal delay-400 relative overflow-hidden transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-14 h-14 bg-yellow-100 text-yellow-600 rounded-2xl flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-stone-800">期末成績單評語大師</h3>
+                    <p class="text-stone-600 flex-grow mb-6 text-sm">
+                        輸入學生特質關鍵字，自動生成具備「起承轉合」的有溫度評語。不再詞窮。
+                    </p>
+                    <a href="https://gemini.google.com/gem/1dlu0RkM4wxHrT7W7nhn1q2yiqyXYBgez?usp=sharing" target="_blank" class="w-full py-3 bg-stone-800 text-white text-center rounded-xl font-bold hover:bg-yellow-600 transition-all shadow-lg">
+                        立即示範
+                    </a>
+                </div>
+
+                <!-- GEM 6: 指令優化 -->
+                <div class="gem-card glass p-8 rounded-3xl border border-orange-100 flex flex-col reveal delay-500 relative overflow-hidden transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-14 h-14 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-wand-sparkles"></i>
                         </div>
-                        <span class="px-4 py-1 bg-green-50 text-green-700 rounded-full text-xs font-bold uppercase tracking-widest">指令大師</span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-stone-800">提示詞優化大師</h3>
-                    <p class="text-stone-600 flex-grow mb-8 text-lg">
-                        不知道怎麼開口？它是你的私人指令顧問。幫你將簡單的想法優化為最高品質的 RTCF 指令。
+                    <h3 class="text-xl font-bold mb-3 text-stone-800">提示詞優化大師</h3>
+                    <p class="text-stone-600 flex-grow mb-8 text-sm leading-relaxed">
+                        不知道怎麼開口？它是您的私人指令顧問。幫您將簡單需求優化為精確指令。
                     </p>
                     <a href="https://gemini.google.com/gem/1-1iy70hHIemkxy6hWowg4oiJQ4AglbMZ?usp=sharing" target="_blank" class="w-full py-4 bg-stone-800 text-white text-center rounded-2xl font-bold hover:bg-green-600 transition-all shadow-lg active:scale-95">
                         <i class="fa-solid fa-play mr-2"></i> 立即示範
@@ -291,100 +236,41 @@
         </div>
     </section>
 
-    <!-- Safety Section -->
-    <section id="safety" class="py-24 px-6 relative overflow-hidden">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-20 reveal">
-                <h2 class="text-4xl font-bold mb-4 text-stone-800">老師的安全護欄</h2>
-                <p class="text-stone-500 text-lg">在運用魔法時，請務必守住專業的底線</p>
-            </div>
-
+    <section id="safety" class="py-24 px-6 bg-stone-900 text-white relative">
+        <div class="max-w-5xl mx-auto text-center reveal">
+            <h2 class="text-4xl font-bold mb-4 text-orange-400">老師的安全護欄</h2>
+            <p class="text-stone-400 text-lg mb-16">在運用魔法時，請務必守住專業的底線</p>
             <div class="grid md:grid-cols-3 gap-10">
-                <div class="p-10 bg-white rounded-3xl border border-red-50 text-center reveal">
-                    <div class="w-24 h-24 mx-auto mb-8 flex items-center justify-center">
-                        <svg viewBox="0 0 100 100" class="w-full h-full">
-                            <rect x="25" y="40" width="50" height="40" rx="5" fill="#EF4444"/>
-                            <path d="M35 40V25C35 16.7 41.7 10 50 10C58.3 10 65 16.7 65 25V40" stroke="#EF4444" stroke-width="8" fill="none"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-stone-800">不餵個資</h3>
-                    <p class="text-stone-500 text-sm leading-relaxed">絕不輸入學生全名。請用代號（如：小A、座號）代替，保護隱私是第一準則。</p>
+                <div class="p-10 bg-stone-800 rounded-3xl border border-stone-700 text-center">
+                    <div class="text-5xl text-red-500 mb-8"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3 class="text-xl font-bold mb-4 text-stone-100">不餵個資</h3>
+                    <p class="text-stone-400 text-sm">不輸入全名。用「座號」或「小A」代替。</p>
                 </div>
-                <div class="p-10 bg-white rounded-3xl border border-yellow-50 text-center reveal delay-100">
-                    <div class="w-24 h-24 mx-auto mb-8 flex items-center justify-center text-5xl">
-                        <i class="fa-solid fa-magnifying-glass text-yellow-500 animate-pulse"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-stone-800" style="margin-top: 2rem;">不信幻覺</h3>
-                    <p class="text-stone-500 text-sm leading-relaxed">AI 可能會「一本正經說瞎話」。產出的事實內容必須經過您的專業核對。</p>
+                <div class="p-10 bg-stone-800 rounded-3xl border border-stone-700 text-center">
+                    <div class="text-5xl text-yellow-500 mb-8 animate-pulse"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3 class="text-xl font-bold mb-4 text-stone-100">不信幻覺</h3>
+                    <p class="text-stone-400 text-sm">AI 可能出錯。事實內容須由老師親自核對。</p>
                 </div>
-                <div class="p-10 bg-white rounded-3xl border border-green-50 text-center reveal delay-200">
-                    <div class="w-24 h-24 mx-auto mb-8 flex items-center justify-center">
-                        <svg viewBox="0 0 100 100" class="w-full h-full">
-                            <path d="M50 20C40 20 30 30 30 45C30 60 50 85 50 85C50 85 70 60 70 45C70 30 60 20 50 20Z" fill="#10B981"/>
-                            <circle cx="50" cy="45" r="10" fill="white"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-stone-800">注入靈魂</h3>
-                    <p class="text-stone-500 text-sm leading-relaxed">AI 只提供「骨架」，老師要注入「溫度」。讓文字真正貼近您的班級現況。</p>
+                <div class="p-10 bg-stone-800 rounded-3xl border border-stone-700 text-center">
+                    <div class="text-5xl text-green-500 mb-8"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3 class="text-xl font-bold mb-4 text-stone-100">注入靈魂</h3>
+                    <p class="text-stone-400 text-sm">AI 提供骨架，老師注入教育愛與專業溫度。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-24 px-6 text-center bg-stone-900 text-white overflow-hidden relative">
-        <div class="blob w-96 h-96 bg-orange-600 top-0 left-1/2 -translate-x-1/2 opacity-20 rounded-full"></div>
-        <div class="reveal relative z-10 text-center">
-            <h2 class="text-4xl font-bold mb-6 text-orange-400">祝各位老師準時下班！</h2>
-            <p class="text-stone-400 text-xl mb-12">省下來的時間，是用來找回生活樂趣的。</p>
-            <div class="flex justify-center space-x-6 text-3xl text-orange-300 mb-12">
-                <i class="fa-solid fa-mug-hot"></i>
-                <i class="fa-solid fa-book-open"></i>
-                <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="text-xs text-stone-500 tracking-widest uppercase">
-                &copy; 2026 Gemini 老師的魔法備課室 | 教學應用分享
-            </div>
-        </div>
+    <footer class="py-12 bg-stone-50 text-center border-t border-orange-100">
+        <p class="text-stone-400 text-sm uppercase tracking-widest">© 2026 Gemini 老師的魔法備課室 | 教學應用研習分享</p>
     </footer>
 
     <script>
-        // 滾動顯示動畫
-        const observerOptions = {
-            threshold: 0.15,
-            rootMargin: "0px 0px -50px 0px"
-        };
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
+                if (entry.isIntersecting) entry.target.classList.add('active');
             });
-        }, observerOptions);
-
+        }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-
-        // 導覽列 Active 狀態切換
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link');
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 150) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
     </script>
 </body>
 </html>
