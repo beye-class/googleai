@@ -88,6 +88,29 @@
             font-weight: bold;
             box-shadow: 0 4px 10px rgba(217, 119, 6, 0.3);
         }
+
+        /* QR Code 容器樣式 */
+        .qr-container {
+            width: 80px;
+            height: 80px;
+            padding: 4px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid #f1e3d6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+        .qr-container:hover {
+            transform: scale(1.1) rotate(2deg);
+        }
+        .qr-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     </style>
 </head>
 <body class="antialiased overflow-x-hidden">
@@ -212,20 +235,23 @@
         </div>
     </section>
 
-    <!-- GEM Showcase Section -->
+    <!-- GEM Showcase Section with QR Codes -->
     <section id="gems" class="py-24 px-6 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-20 reveal">
                 <h2 class="text-4xl font-bold mb-4 text-stone-800">魔法機器人：六大實戰應用</h2>
-                <p class="text-stone-500">點擊按鈕，現場示範這些強大的備課與行政工具</p>
+                <p class="text-stone-500">點擊按鈕或掃描 QR Code，現場體驗這些備課神器</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- GEM 1 -->
+                <!-- GEM 1: 閱讀測驗 -->
                 <div class="gem-card glass p-8 rounded-3xl border border-orange-100 flex flex-col reveal relative overflow-hidden transition-all">
                     <div class="flex justify-between items-start mb-6">
                         <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="qr-container">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://gemini.google.com/gem/1JWrG2W4O8Msjv3fWKIeDNv-lzvMvnJhP?usp=sharing" alt="QR Code for Reading Bot">
                         </div>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-stone-800">閱讀測驗機器人</h3>
@@ -237,11 +263,14 @@
                     </a>
                 </div>
 
-                <!-- GEM 2 -->
+                <!-- GEM 2: 輔導B卡 -->
                 <div class="gem-card glass p-8 rounded-3xl border border-orange-100 flex flex-col reveal delay-100 relative overflow-hidden transition-all">
                     <div class="flex justify-between items-start mb-6">
                         <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                        <div class="qr-container">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://gemini.google.com/gem/10OjUfUHbg5P-VVK3WXSyrlbR2880OLMu?usp=sharing" alt="QR Code for Guidance Bot">
                         </div>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-stone-800">輔導 B 卡小幫手</h3>
@@ -253,11 +282,14 @@
                     </a>
                 </div>
 
-                <!-- GEM 3 -->
+                <!-- GEM 3: LINE 宣導 -->
                 <div class="gem-card glass p-8 rounded-3xl border border-orange-100 flex flex-col reveal delay-200 relative overflow-hidden transition-all">
                     <div class="flex justify-between items-start mb-6">
                         <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <div class="qr-container">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://gemini.google.com/gem/1b9c97613d9e" alt="QR Code for LINE Bot">
                         </div>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-stone-800">LINE 親師群組宣傳</h3>
@@ -269,13 +301,15 @@
                     </a>
                 </div>
 
-                <!-- GEM 4 -->
+                <!-- GEM 4: 擊敗恐龍家長 -->
                 <div class="gem-card glass p-8 rounded-3xl border border-orange-100 flex flex-col reveal delay-300 relative overflow-hidden transition-all">
                     <div class="flex justify-between items-start mb-6">
                         <div class="w-14 h-14 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-shield-heart"></i>
                         </div>
-                        <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full text-xs font-bold">高 EQ 救星</span>
+                        <div class="qr-container">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://gemini.google.com/gem/1id6VKdt1xYRy49_Auy53CMidvQ-85xx8?usp=sharing" alt="QR Code for Parent Comm Bot">
+                        </div>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-stone-800">擊敗恐龍家長大作戰</h3>
                     <p class="text-stone-600 flex-grow mb-6 text-sm">
@@ -286,11 +320,14 @@
                     </a>
                 </div>
 
-                <!-- GEM 5 -->
+                <!-- GEM 5: 期末評語 -->
                 <div class="gem-card glass p-8 rounded-3xl border border-orange-100 flex flex-col reveal delay-400 relative overflow-hidden transition-all">
                     <div class="flex justify-between items-start mb-6">
                         <div class="w-14 h-14 bg-yellow-100 text-yellow-600 rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <div class="qr-container">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://gemini.google.com/gem/1dlu0RkM4wxHrT7W7nhn1q2yiqyXYBgez?usp=sharing" alt="QR Code for Report Card Bot">
                         </div>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-stone-800">期末成績單評語大師</h3>
@@ -302,11 +339,14 @@
                     </a>
                 </div>
 
-                <!-- GEM 6 -->
+                <!-- GEM 6: 指令優化 -->
                 <div class="gem-card glass p-8 rounded-3xl border border-orange-100 flex flex-col reveal delay-500 relative overflow-hidden transition-all">
                     <div class="flex justify-between items-start mb-6">
                         <div class="w-14 h-14 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-wand-sparkles"></i>
+                        </div>
+                        <div class="qr-container">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://gemini.google.com/gem/1-1iy70hHIemkxy6hWowg4oiJQ4AglbMZ?usp=sharing" alt="QR Code for Prompt Master">
                         </div>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-stone-800">提示詞優化大師</h3>
@@ -321,7 +361,7 @@
         </div>
     </section>
 
-    <!-- Guide Section (根據截圖與實際流程優化) -->
+    <!-- Guide Section -->
     <section id="guide" class="py-24 px-6 bg-stone-50 overflow-hidden relative">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16 reveal">
@@ -330,42 +370,36 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 reveal">
-                <!-- Step 1 -->
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-orange-50 relative">
                     <div class="step-number">1</div>
                     <div class="text-orange-600 text-3xl mb-4"><i class="fa-solid fa-link"></i></div>
                     <h3 class="font-bold text-lg mb-2">點擊連結</h3>
                     <p class="text-stone-500 text-sm">點擊我分享的機器人連結，進入預覽或對話頁面。</p>
                 </div>
-                <!-- Step 2 -->
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-stone-50 relative">
                     <div class="step-number">2</div>
                     <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-paper-plane"></i></div>
                     <h3 class="font-bold text-lg mb-2">開始對話</h3>
                     <p class="text-stone-500 text-sm">輸入任意內容<strong>開始對話過一次</strong>，該 Gem 就會出現您的側邊欄清單中。</p>
                 </div>
-                <!-- Step 3 -->
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-stone-700 relative border-2 border-blue-100">
                     <div class="step-number" style="background: #4285F4;">3</div>
                     <div class="text-stone-700 text-3xl mb-4"><i class="fa-solid fa-chevron-right"></i></div>
                     <h3 class="font-bold text-lg mb-2">點選側邊欄「Gem >」</h3>
                     <p class="text-stone-500 text-sm">點擊 Gemini 左側選單中 Gem 標題旁邊的 <strong>「箭頭 >」</strong>，進入 GEM 管理員。</p>
                 </div>
-                <!-- Step 4 -->
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-stone-50 relative">
                     <div class="step-number">4</div>
                     <div class="text-stone-500 text-3xl mb-4"><i class="fa-solid fa-ellipsis-vertical"></i></div>
                     <h3 class="font-bold text-lg mb-2">點擊「三個點」</h3>
                     <p class="text-stone-500 text-sm">在管理頁面找到該機器人，點擊其名稱旁邊的<strong>更多選項 (三個點)</strong>。</p>
                 </div>
-                <!-- Step 5 -->
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-stone-50 relative border-2 border-green-100">
                     <div class="step-number" style="background: #10B981;">5</div>
                     <div class="text-green-500 text-3xl mb-4"><i class="fa-solid fa-copy"></i></div>
                     <h3 class="font-bold text-lg mb-2">選擇「另存副本」</h3>
                     <p class="text-stone-500 text-sm">選擇另存副本，這會將該 Gem <strong>正式保存</strong> 到您的帳戶清單中。</p>
                 </div>
-                <!-- Step 6 -->
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-stone-50 relative">
                     <div class="step-number">6</div>
                     <div class="text-indigo-500 text-3xl mb-4"><i class="fa-solid fa-pen-to-square"></i></div>
