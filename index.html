@@ -72,7 +72,6 @@
             font-weight: 700;
         }
 
-        /* 步驟數字裝飾 */
         .step-number {
             position: absolute;
             top: -10px;
@@ -89,7 +88,6 @@
             box-shadow: 0 4px 10px rgba(217, 119, 6, 0.3);
         }
 
-        /* QR Code 容器樣式 */
         .qr-container {
             width: 80px;
             height: 80px;
@@ -128,6 +126,7 @@
                 <a href="#home" class="nav-link hover:text-orange-600 transition">首頁</a>
                 <a href="#formula" class="nav-link hover:text-orange-600 transition">RTCF公式</a>
                 <a href="#gems" class="nav-link hover:text-orange-600 transition">實戰工具</a>
+                <a href="#resources" class="nav-link hover:text-orange-600 transition">推薦資源</a>
                 <a href="#guide" class="nav-link hover:text-orange-600 transition">使用教學</a>
                 <a href="#safety" class="nav-link hover:text-orange-600 transition">安全原則</a>
             </div>
@@ -251,7 +250,6 @@
                             <i class="fa-solid fa-graduation-cap"></i>
                         </div>
                         <div class="qr-container">
-                            <!-- URL Encoded Data -->
                             <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fgemini.google.com%2Fgem%2F1JWrG2W4O8Msjv3fWKIeDNv-lzvMvnJhP%3Fusp%3Dsharing" alt="QR Code for Reading Bot">
                         </div>
                     </div>
@@ -362,6 +360,37 @@
         </div>
     </section>
 
+    <!-- NEW Recommended Resources Section -->
+    <section id="resources" class="py-24 px-6 bg-orange-50/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold mb-4 text-stone-800">魔法補給站：延伸學習資源</h2>
+                <p class="text-stone-500">更多有趣的 AI 教育應用，讓您的魔法口袋更豐富</p>
+            </div>
+
+            <div class="max-w-md mx-auto reveal">
+                <div class="gem-card glass p-8 rounded-3xl border border-orange-200 flex flex-col relative overflow-hidden transition-all">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-14 h-14 bg-white text-orange-600 rounded-2xl flex items-center justify-center text-3xl shadow-sm">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="qr-container">
+                            <!-- Encoded FunFun.AI URL -->
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fchunsheng612.github.io%2FFunFun.AI-Website%2F" alt="QR Code for FunFun AI">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-stone-800">FunFun.AI 教學網站</h3>
+                    <p class="text-stone-600 flex-grow mb-6 text-sm">
+                        提供多元的 AI 教學案例與實用工具，是老師深入探索 AI 融入課堂的最佳資源站。
+                    </p>
+                    <a href="https://chunsheng612.github.io/FunFun.AI-Website/" target="_blank" class="w-full py-3 bg-stone-800 text-white text-center rounded-xl font-bold hover:bg-orange-600 transition-all shadow-md">
+                        前往探索
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Guide Section -->
     <section id="guide" class="py-24 px-6 bg-stone-50 overflow-hidden relative">
         <div class="max-w-6xl mx-auto">
@@ -405,16 +434,7 @@
                     <div class="step-number">6</div>
                     <div class="text-indigo-500 text-3xl mb-4"><i class="fa-solid fa-pen-to-square"></i></div>
                     <h3 class="font-bold text-lg mb-2">客製化修改</h3>
-                    <p class="text-stone-500 text-sm">現在您可以點擊「編輯」，<strong>自由調整指令</strong>（如修改年級、語氣），成為專屬工具！</p>
-                </div>
-            </div>
-
-            <!-- Reminder -->
-            <div class="mt-12 p-6 bg-yellow-50 border-l-8 border-yellow-400 rounded-r-3xl flex items-start reveal">
-                <div class="text-yellow-600 text-2xl mr-4 mt-1"><i class="fa-solid fa-lightbulb"></i></div>
-                <div>
-                    <h4 class="font-bold text-yellow-800 mb-1">專家建議：</h4>
-                    <p class="text-yellow-700 text-sm">雖然對話過就能直接用，但 <strong>「另存副本」</strong> 才是王道！因為只有存成副本後，您才能查看並修改背後的指令內容。</p>
+                    <p class="text-stone-500 text-sm">現在您可以點擊「編輯」，<strong>自由調整指令</strong>，成為專屬工具！</p>
                 </div>
             </div>
         </div>
@@ -429,17 +449,17 @@
                 <div class="p-10 bg-stone-800 rounded-3xl border border-stone-700 text-center">
                     <div class="text-5xl text-red-500 mb-8"><i class="fa-solid fa-user-shield"></i></div>
                     <h3 class="text-xl font-bold mb-4 text-stone-100">不餵個資</h3>
-                    <p class="text-stone-400 text-sm leading-relaxed">絕對不輸入全名。請用代號（如：小A、座號）代替，隱私是首要準則。</p>
+                    <p class="text-stone-400 text-sm leading-relaxed">絕對不輸入全名。請用座號代替，隱私是首要準則。</p>
                 </div>
                 <div class="p-10 bg-stone-800 rounded-3xl border border-stone-700 text-center">
                     <div class="text-5xl text-yellow-500 mb-8 animate-pulse"><i class="fa-solid fa-triangle-exclamation"></i></div>
                     <h3 class="text-xl font-bold mb-4 text-stone-100">不信幻覺</h3>
-                    <p class="text-stone-400 text-sm leading-relaxed">AI 可能一本正經地出錯。產出的事實內容須由老師親自核對。</p>
+                    <p class="text-stone-400 text-sm leading-relaxed">AI 可能出錯。事實內容須由老師親自核對。</p>
                 </div>
                 <div class="p-10 bg-stone-800 rounded-3xl border border-stone-700 text-center">
                     <div class="text-5xl text-green-500 mb-8"><i class="fa-solid fa-heart-pulse"></i></div>
                     <h3 class="text-xl font-bold mb-4 text-stone-100">注入靈魂</h3>
-                    <p class="text-stone-400 text-sm leading-relaxed">AI 只提供骨架，老師注入專業教育愛與溫度，讓內容真正貼近班級。</p>
+                    <p class="text-stone-400 text-sm leading-relaxed">AI 只提供骨架，老師注入專業教育愛與溫度。</p>
                 </div>
             </div>
         </div>
